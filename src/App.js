@@ -15,32 +15,29 @@ function App() {
   }, [countDown]);
 
 
-  const getTimeFromServer = async () => {
-    console.log('clicked!');
-    try {
-      console.log('calling fetch()!');
-      let response = await fetch('/slow');
-      let vals = await response.json();
-      setCountDown(curVal => curVal - 1);
-      return setData(vals.currentTime);
-    } catch (ex) {
-      console.log(ex);
-    }
-  };
+  // const getTimeFromServer = async () => {
+  //   console.log('clicked!');
+  //   try {
+  //     console.log('calling fetch()!');
+  //     let response = await fetch('/slow');
+  //     let vals = await response.json();
+  //     setCountDown(curVal => curVal - 1);
+  //     return setData(vals.currentTime);
+  //   } catch (ex) {
+  //     console.log(ex);
+  //   }
+  // };
 
-  console.log("App(): about to render!!!");
   return (
     <div className='App'>
       <header className='App-header'>
-        <button onClick={() => setCount((curVal) => curVal + 1)}>
-          click me
-        </button>
-        <button onClick={() => setCount2((curVal) => curVal + 1)}>
-          click me2
-        </button>
-        <p>{data || 'no value yet'}</p>
-      </header>
-    </div>
+        <h1>Superheroes</h1>
+       </header>
+      <div>
+        <p>Alter Ego</p>
+        <p>Tony Stark</p>
+      </div>
+
   );
 }
 
