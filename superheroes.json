@@ -4,7 +4,8 @@
     "su[erpower": ["Superhuman strength", "Invulnerability"],
     "alterego": "Tony Stark",
     "durability": "Indestructible"
-  },
+  }, 
+
   {
     "name": "Spiderman",
     "superpowers": ["Spider-Sense", "Web-Slinging", "Wall-Crawling"],
@@ -18,3 +19,4 @@
     "durability": "Awesome"
   }
 ]
+export default superHeroData;
